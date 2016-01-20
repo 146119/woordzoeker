@@ -11,7 +11,9 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <div class="a">
+    <div id="titel">Woordzoeker 1.0</div>
+        
+    <div class="a">
 <table class="b" border="1" style="width:10%">
   <tr>
     <td><form action="upload.php" method="post" enctype="multipart/form-data">
@@ -31,6 +33,6 @@ and open the template in the editor.
     </tr>
 </table>
             
-            </div>        
+    </div>        
     </body>
 </html>
