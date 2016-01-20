@@ -14,6 +14,7 @@ body {
                 color: #FFFFFF
 }
 
-.c {width: 70%;}
+.c {float:left;}
 
-.b {width:30%;}
+
+.b {float:left;}
