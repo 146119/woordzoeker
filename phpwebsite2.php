@@ -6,12 +6,12 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="phpwebsite.css">
+        <link rel="stylesheet" type="text/css" href="phpwebsite2.css">
         <meta charset="UTF-8">
         <title></title>
     </head>
     <body>
-    <div id="titel">Woordzoeker text bestand uploaden</div>
+    <div id="titel">Woordzoeker 1.0</div>
         
     <div class="a">
 <table class="b" border="1" style="width:10%">
@@ -24,7 +24,15 @@ and open the template in the editor.
     </td>
   </tr>
 </table> 
-         
+        
+<table class="c" border="1" style="width:10%">
+    <tr>
+        <td>
+            Dit wordt de woordzoeker
+        </td>
+    </tr>
+</table>
+            
     </div>        
     </body>
 </html>
