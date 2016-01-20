@@ -11,11 +11,6 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-        <?php
-            include "bestand.php";
-        // put your code here
-        ?>
-        
         <div class="a">
 <table class="b" border="1" style="width:10%">
   <tr>
