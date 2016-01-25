@@ -16,9 +16,10 @@ and open the template in the editor.
     <div class="a">
 <table class="b" border="1" style="width:10%">
   <tr>
-    <td><form action="upload.php" method="post" enctype="multipart/form-data">
+      <td><form action="phpwebsite2.php" method="post" enctype="multipart/form-data">
     Select file to upload:
     <input type="file" name="fileToUpload" id="fileToUpload">
+ <input type="submit" name="Woordzoekermaken" value="Woordzoeker maken">
 </form>
 
     </td>

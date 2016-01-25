@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+<?php
+//$uploaded= $_FILES["fileToUpload"];
+
+if (!isset($_FILES['fileToUpload'])) {
+    die("Geen bestand geupload");
+}
+?>
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="phpwebsite2.css">
@@ -11,24 +13,23 @@ and open the template in the editor.
         <title></title>
     </head>
     <body>
-    <div id="titel">Woordzoeker 1.0</div>
-        
-    <div class="a">
-<table class="b" border="1" style="width:10%">
-  <tr>
-    <td><form action="upload.php" method="post" enctype="multipart/form-data">
-    Select file to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-</form>
-
-    </td>
-  </tr>
-</table> 
-        
-<table class="c" border="1" style="width:10%">
+    <div id="titel">Woordzoeker 1.0</div>    
+<table class="c" border="1" >
     <tr>
         <td>
-            Dit wordt de woordzoeker
+         <?php
+        $regels = FILE($_FILES['fileToUpload']['tmp_name']);
+        print_R($regels);
+        // ingelezen, nu verwerken
+        // maak een $wz array ? uit regels of cellen $wz[][] 
+        // str_split("zin") geeft ['z', 'i', 'n']
+        // maak een $w array
+        // 
+        // zoekLRH($wz, $w);    // doet wat?
+        // functions
+        // output aanpassen
+        
+?>
         </td>
     </tr>
 </table>
