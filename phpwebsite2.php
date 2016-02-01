@@ -19,7 +19,8 @@ if (!isset($_FILES['fileToUpload'])) {
         <td>
          <?php
         $regels = FILE($_FILES['fileToUpload']['tmp_name']);
-        print_R($regels);
+  
+        
         // ingelezen, nu verwerken
         // maak een $wz array ? uit regels of cellen $wz[][] 
         // str_split("zin") geeft ['z', 'i', 'n']
@@ -29,12 +30,16 @@ if (!isset($_FILES['fileToUpload'])) {
         // functions
         // output aanpassen
         
-$woorden = Array(); // woorden
+$woorden = Array($regels); // woorden
+// strlen($woorden);
+
+
 
     $alfabet = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
             );
-    
+     
   function build_table($woorden){
+      //print_r($woorden);
     // start table
     $html = '<table>';
     // header row
@@ -58,9 +63,18 @@ $woorden = Array(); // woorden
     $html .= '</table>';
     return $html;
 }
-
+$woorden[] = "aap";
+$woorden[]="pop";
+echo build_table($woorden);
 ?>
             
+      <script>
+function myFunction() {
+    var str = "$woorden";
+    var res = str.split("");
+   
+</script>  
+
     </div>        
     </body>
 </html>
