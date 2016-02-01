@@ -13,11 +13,13 @@ if (!isset($_FILES['fileToUpload'])) {
         <title></title>
     </head>
     <body>
-    <div id="titel">Woordzoeker 1.0</div>  
-    
-<?php
- $woorden = FILE($_FILES['fileToUpload']['tmp_name']);
-        print_R($woorden);
+    <div id="titel">Woordzoeker 1.0</div>    
+<table class="c" border="1" >
+    <tr>
+        <td>
+         <?php
+        $regels = FILE($_FILES['fileToUpload']['tmp_name']);
+        print_R($regels);
         // ingelezen, nu verwerken
         // maak een $wz array ? uit regels of cellen $wz[][] 
         // str_split("zin") geeft ['z', 'i', 'n']
