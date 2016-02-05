@@ -35,8 +35,21 @@ if (!isset($_FILES['fileToUpload'])) {
    // print_r($regels);
    // print"</pre>";
 
+$woorden = Array($bestand); // woorden
+// strlen($woorden);
+$woorden0= array($woorden[0]);
+$woorden1= array($woorden[1]);
+$woorden2= array($woorden[2]);
+$woorden3= array($woorden[3]);
+$woorden4= array($woorden[4]);
+$woorden5= array($woorden[5]);
+
+print_r($woorden0);
+
     $alfabet = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
-            );  
+            );
+  
+ 
 ?>       
 </body>
 </html>
