@@ -12,13 +12,13 @@ if (!isset($_FILES['fileToUpload'])) {
         <meta charset="UTF-8">
         <title></title>
     </head>
-    <body>
+    
     <div id="titel">Woordzoeker 1.0</div>    
-<table class="c" border="1" >
-    <tr>
-        <td>
-         <?php
-        $regels = FILE($_FILES['fileToUpload']['tmp_name']);
+
+
+   
+<?php
+        $bestand = FILE($_FILES['fileToUpload']['tmp_name']);
   
         
         // ingelezen, nu verwerken
@@ -29,52 +29,27 @@ if (!isset($_FILES['fileToUpload'])) {
         // zoekLRH($wz, $w);    // doet wat?
         // functions
         // output aanpassen
-        
-$woorden = Array($regels); // woorden
+   
+   // // print_r($regels [0][3]) ;
+   // print"<pre>";
+   // print_r($regels);
+   // print"</pre>";
+
+$woorden = Array($bestand); // woorden
 // strlen($woorden);
+$woorden0= array($woorden[0]);
+$woorden1= array($woorden[1]);
+$woorden2= array($woorden[2]);
+$woorden3= array($woorden[3]);
+$woorden4= array($woorden[4]);
+$woorden5= array($woorden[5]);
 
-
+print_r($woorden0);
 
     $alfabet = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
             );
-     
-  function build_table($woorden){
-      //print_r($woorden);
-    // start table
-    $html = '<table>';
-    // header row
-    $html .= '<tr>';
-    foreach($woorden[0] as $key=>$value){
-            $html .= '<th>' . $key . '</th>';
-        }
-    $html .= '</tr>';
+  
+ 
+?>       
 
-    // data rows
-    foreach( $woorden as $key=>$value){
-        $html .= '<tr>';
-        foreach($value as $key2=>$value2){
-            $html .= '<td>' . $value2 . '</td>';
-        }
-        $html .= '</tr>';
-    }
-
-    // finish table and return it
-
-    $html .= '</table>';
-    return $html;
-}
-$woorden[] = "aap";
-$woorden[]="pop";
-echo build_table($woorden);
-?>
-            
-      <script>
-function myFunction() {
-    var str = "$woorden";
-    var res = str.split("");
-   
-</script>  
-
-    </div>        
-    </body>
 </html>
