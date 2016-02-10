@@ -2,7 +2,6 @@
 foreach ($wz as $regel) {
 // ---erkan----, ----sam-----, --yoni------, -boom-------, -----appel--, ---school---
 foreach($regel as $letter) {
- 
     //LR zoeken
 $check = 0;
 for ($i = 0; $i < count ($zoekwoord); $i++) {
