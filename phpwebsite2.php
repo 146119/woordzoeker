@@ -18,9 +18,10 @@ if (!isset($_FILES['fileToUpload'])) {
 
    
 <?php
-        $bestand = FILE($_FILES['fileToUpload']['tmp_name']);
-  
-        
+        $wz = FILE($_FILES['fileToUpload']['tmp_name']);
+  $ruweWoordzoeker = Array($bestand);
+print_r($ruweWoordzoeker);
+ 
         // ingelezen, nu verwerken
         // maak een $wz array ? uit regels of cellen $wz[][] 
         // str_split("zin") geeft ['z', 'i', 'n']
@@ -35,8 +36,8 @@ if (!isset($_FILES['fileToUpload'])) {
    // print_r($regels);
    // print"</pre>";
 
-    $alfabet = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
-            );  
+    // $letters = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
+           // );  
 ?>       
 </body>
 </html>
