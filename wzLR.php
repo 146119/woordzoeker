@@ -17,6 +17,11 @@ if ($check == count ($zoekwoord)) {
     $gevondenWplaats [$w] = $coördinaat [$w];
     $gevondenWplaats [$w] = array_slice ($gevondenWplaats [$w]);
 }
+if ($check <> count ($zoekwoord)) {
+    for ($a = 0; $a <= count ($zoekwoord); $a++) {
+        unset ($coördinaat [$w] [$a]);
+    }
+}
 }
     
 }
