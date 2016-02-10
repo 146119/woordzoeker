@@ -2,7 +2,22 @@
 foreach ($wz as $regel) {
 // ---erkan----, ----sam-----, --yoni------, -boom-------, -----appel--, ---school---
 foreach($regel as $letter) {
-  
+ 
+    //LR zoeken
+$check = 0;
+for ($i = 0; $i < count ($zoekwoord); $i++) {
+    if ($zoekwoord[$i] == $zoekregel[$i + $j]) {
+        $check = $check + 1;
+        $x = $i + $j;
+        $y = $regelnummer - 1;
+        $c = "x" . $x . "y" . $y;
+        array_push($coördinaat[$w], $c);
+    }
+}
+if ($check == count ($zoekwoord)) {
+    $gevondenWplaats [$w] = $coördinaat [$w];
+    $gevondenWplaats [$w] = array_slice ($gevondenWplaats [$w]);
+}
 }
     
 }
@@ -17,21 +32,5 @@ function zoekLR($wz,$w) {
     $wz [4]=str_split('-----appel--');
     $wz [5]=str_split('---school---');
     
-}
-
-//LR zoeken
-$check = 0;
-for ($i = 0; $i < count ($zoekwoord); $i++) {
-    if ($zoekwoord[$i] == $zoekregel[$i + $j]) {
-        $check = $check + 1;
-        $x = $i + $j;
-        $y = $regelnummer - 1;
-        $c = "x" . $x . "y" . $y;
-        array_push($coördinaat[$w], $c);
-    }
-}
-if ($check == count ($zoekwoord)) {
-    $gevondenWplaats [$w] = $coördinaat [$w];
-    $gevondenWplaats [$w] = array_slice ($gevondenWplaats [$w]);
 }
 ?>
