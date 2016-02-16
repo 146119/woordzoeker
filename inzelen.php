@@ -1,4 +1,6 @@
 <?php
+$wz = array($bestand);   //array van het bestand
+
 function build_table($array) {
     $html = '<table>';
     $xcoördinaat = "0";
@@ -21,11 +23,5 @@ function build_table($array) {
 
 $letters = array("a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"
             );  
-
-
-
-            $wz = array($bestand);   //array van het bestand
-
-
-
+         
 ?>

@@ -18,9 +18,9 @@ if (!isset($_FILES['fileToUpload'])) {
 
    
 <?php
-        $wz = FILE($_FILES['fileToUpload']['tmp_name']);
-  $ruweWoordzoeker = Array($bestand);
-print_r($ruweWoordzoeker);
+        $bestand = FILE($_FILES['fileToUpload']['tmp_name']);
+  $wz = Array($bestand);
+
  
         // ingelezen, nu verwerken
         // maak een $wz array ? uit regels of cellen $wz[][] 
