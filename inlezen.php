@@ -1,5 +1,5 @@
 <?php
-$wz = array($bestand);   //array van het bestand
+//$wz = array($bestand);   //array van het bestand
 
 function build_table($array) {
     $html = '<table>';

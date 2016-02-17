@@ -8,7 +8,7 @@ if (!isset($_FILES['fileToUpload'])) {
 ?>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="phpwebsite2.css">
+        <link rel="stylesheet" type="text/css" href="output.css">
         <meta charset="UTF-8">
         <title></title>
     </head>
@@ -18,9 +18,13 @@ if (!isset($_FILES['fileToUpload'])) {
 
    
 <?php
+include 'inlezen.php';
+include 'splitsen.php';
+
         $bestand = FILE($_FILES['fileToUpload']['tmp_name']);
   $wz = Array($bestand);
 
+  echo build_table($array)
  
         // ingelezen, nu verwerken
         // maak een $wz array ? uit regels of cellen $wz[][] 

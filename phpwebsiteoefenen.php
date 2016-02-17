@@ -8,7 +8,7 @@ if (!isset($_FILES['fileToUpload'])) {
 ?>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="phpwebsite2.css">
+        <link rel="stylesheet" type="text/css" href="output.css">
         <meta charset="UTF-8">
         <title></title>
     </head>

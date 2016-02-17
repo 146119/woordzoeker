@@ -32,9 +32,9 @@ function zoekLR($wz,$w) {
     $wz [0]= str_split('---erkan----');
     $wz [1]= str_split('----sam-----');  
     $wz [2]= str_split('--yoni------');
-    $wz [3]=str_split('-boom-------');
-    $wz [4]=str_split('-----appel--');
-    $wz [5]=str_split('---school---');
+    $wz [3]= str_split('-boom-------');
+    $wz [4]= str_split('-----appel--');
+    $wz [5]= str_split('---school---');
     
 }
 ?>
