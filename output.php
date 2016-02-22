@@ -18,8 +18,9 @@ if (!isset($_FILES['fileToUpload'])) {
 
    
 <?php
-include 'inlezen.php';
+include 'tabel.php';
 include 'splitsen.php';
+include 'horizontaal.php';
 
         $bestand = FILE($_FILES['fileToUpload']['tmp_name']);
   $wz = Array($bestand);
