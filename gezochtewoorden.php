@@ -1,5 +1,5 @@
 <?php
-function printZoekwoorden($zoekwoorden) {
+function gezochtewoorden($zoekwoorden) {
     //sort($zoekwoorden);
     array_multisort(array_map('strlen', $zoekwoorden), $zoekwoorden);
     foreach ($zoekwoorden as &$zoekwoord) {

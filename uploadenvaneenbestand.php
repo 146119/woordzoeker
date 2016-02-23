@@ -6,7 +6,7 @@ function voegBestandToe() {
         if ($_FILES["file"]["error"] > 0) {
             echo "Error: " . $_FILES["file"]["error"] . "<br />";
         } elseif ($_FILES["file"]["type"] !== "text/plain") {
-            echo "Dit is een verkeerd type bestand.";
+            echo "Dit is geen .txt bestand.";
         } else {
             $woordenzoeker = FILE($_FILES["file"]["tmp_name"]);
         }

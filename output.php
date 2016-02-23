@@ -1,15 +1,15 @@
-
+<!DOCTYPE html>
 
 <html>
     <head>
         <?php
-include 'Splitsen.php';
-include 'BestandToevoegen.php';
+include 'splitsen.php';
+include 'uploadenvaneenbestand.php';
 include 'randomalfabet.php';
-include 'Horizontaal.php';
+include 'functiehorizontaal.php';
 include 'tabelmaken.php';
 include 'jquery.php';
-include 'PrintZoekwoorden.php';
+include 'gezochtewoorden.php';
 voegBestandToe();
 splitsen($woordenzoeker);
 minnetjesNaarLetters($woordenzoeker);
@@ -64,8 +64,8 @@ function highlight($text, $words, $color='yellow', $case='1') {
             </form>
   
         
-        <?php echo build_table($woordenzoeker); ?> 
-            <?php printZoekwoorden($zoekwoorden); ?>
+        <?php echo build_table($woordenzoeker);  
+        gezochtewoorden($zoekwoorden); ?>
           
        
     </body>
