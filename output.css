@@ -15,3 +15,11 @@ body {
 }
 
 #titel {font-weight: bold;}
+
+#woordzoekertabel{
+    float: left
+}
+
+#woordenlijst  {
+    float: left
+}

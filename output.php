@@ -11,23 +11,17 @@ include 'Functies/PrintZoekwoorden.php';
 voegBestandToe();
 splitsen($woordenzoeker);
 minnetjesNaarLetters($woordenzoeker);
-$niveau = 4;
+$niveau = 2;
 if (isset($_POST["Niveau1"])) {
     $niveau = 1;
 }
 if (isset($_POST["Niveau2"])) {
     $niveau = 2;
 }
-if (isset($_POST["Niveau3"])) {
-    $niveau = 3;
-}
-if (isset($_POST["Niveau4"])) {
-    $niveau = 4;
-}
+  $niveau = 2;
+
 if (isset($niveau)) {
     horizontaalZoeken($woordenzoeker, $gesplitst, $niveau);
-    verticaalZoeken($woordenzoeker, $gesplitst, $niveau);
-    diagonaalZoeken($woordenzoeker, $gesplitst, $niveau);
 }
 ?>
 
@@ -37,14 +31,14 @@ if (isset($niveau)) {
         <link rel="stylesheet" type="text/css" href="output.css">
         <meta charset="UTF-8">
         <title></title>
-    
+ <div id="titel">
   Woordzoeker 1.0 
-
+ </div>
     </head>
     <body>
  
             
-            Woordzoeker
+  
         <?php
         bestandtoevoegenaanenuit();
         ?>
@@ -55,22 +49,10 @@ if (isset($niveau)) {
 
             </form>
         </div>
-        <?php
-        if (isset($_POST["Niveau1"])) {
-            echo 'Hij zoekt nu alleen van links naar rechts';
-        }
-        if (isset($_POST["Niveau2"])) {
-            echo 'Hij zoekt nu alleen horizontaal';
-    
-        }
-        //if (isset($niveau)) {
-            //horizontaalZoeken($woordenzoeker, $gesplitst, $niveau);
-      
-        //}
-        ?>
-        <div id="tabel">
+
+        <div id="woordzoekertabel">
         <?php echo build_table($woordenzoeker); ?>   
-            <div id="zoekwoorden">
+            <div id="woordenlijst">
             <?php printZoekwoorden($zoekwoorden); ?>
             </div>
        
