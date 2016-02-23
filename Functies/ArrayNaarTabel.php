@@ -19,4 +19,3 @@ function build_table($array) {
     return $html;
 }
 
-?>

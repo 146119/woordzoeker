@@ -26,4 +26,3 @@ function splitsen($woordenzoeker) {
         $gzw = str_split($gzw);
     }
 }
-?>
