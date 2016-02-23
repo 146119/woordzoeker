@@ -12,13 +12,13 @@ function voegBestandToe() {
         }
     }
     else {
-        $woordenzoeker = file("Woordzoekers/woordzoeker.txt");
+        $woordenzoeker = file("woordzoeker.txt");
     }
     return $woordenzoeker;
-    $woordenzoeker = file("Woordzoekers/woordzoeker.txt");
+    $woordenzoeker = file("woordzoeker.txt");
 }
 
-function bestandtoevoegenaanenuit (){
+function uploadonorof (){
     echo '<form action="Output.php" method="post" enctype="multipart/form-data">
             <br/>
             <label for="file">Zoek een bestand:</label>

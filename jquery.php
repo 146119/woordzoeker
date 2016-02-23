@@ -1,6 +1,6 @@
 <?php
 
-function jQueryEnPhpOpmaak($gevondenWoordenCoordinaten, $zoekwoorden) {
+function jquery($gevondenWoordenCoordinaten, $zoekwoorden) {
     include "opmaak.php";
     klikKleuren($zoekwoorden);
     zoekwoordenOnderlijnen($zoekwoorden);
@@ -8,14 +8,14 @@ function jQueryEnPhpOpmaak($gevondenWoordenCoordinaten, $zoekwoorden) {
         echo '<script type=text/javascript>';
         echo '$(document).ready(function () {';
         echo '$("div.' . $GEVONDENWOORDJE . '").mouseenter(function () {';
-        echo '$("td.' . $GEVONDENWOORDJE . '").css("background-color", "#c6c6c6");';
+        echo '$("td.' . $GEVONDENWOORDJE . '").css("background-color", "#4BFFF6");';
         echo "});";
         echo '});';
         echo '</script>';
         echo '<script type=text/javascript>';
         echo '$(document).ready(function () {';
         echo '$("div.' . $GEVONDENWOORDJE . '").mouseleave(function () {';
-        echo '$("td.' . $GEVONDENWOORDJE . '").css("background-color", "white");';
+        echo '$("td.' . $GEVONDENWOORDJE . '").css("background-color", "red");';
         echo "});";
         echo "});";
         echo '</script>';

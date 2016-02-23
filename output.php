@@ -5,10 +5,10 @@
         <?php
 include 'Splitsen.php';
 include 'BestandToevoegen.php';
-include 'MinnetjesNaarLetters.php';
+include 'randomalfabet.php';
 include 'Horizontaal.php';
-include 'ArrayNaarTabel.php';
-include 'PrintjQueryEnPHPOpmaak.php';
+include 'tabelmaken.php';
+include 'jquery.php';
 include 'PrintZoekwoorden.php';
 voegBestandToe();
 splitsen($woordenzoeker);
@@ -26,7 +26,25 @@ if (isset($_POST["Niveau2"])) {
 if (isset($niveau)) {
     horizontaalZoeken($woordenzoeker, $gesplitst, $niveau);
 }
-jQueryEnPhpOpmaak($gevondenWoordenCoordinaten, $zoekwoorden); ?>
+
+jquery($gevondenWoordenCoordinaten, $zoekwoorden); 
+
+function highlight($text, $words, $color='yellow', $case='1') { 
+ $words = trim($words); 
+ $wordsArray = explode(' ', $words); 
+ 
+ foreach($wordsArray as $word) { 
+  if(strlen(trim($word)) != 0) 
+   if ($case) {
+    $text = eregi_replace($word, '<font style="background:' . $color . '";>\\0</font>', $text);
+     } else {
+    $text = ereg_replace($word, '<font style="background:' . $color . '";>\\0</font>', $text); 
+   }
+  } 
+ return $text; 
+} 
+?>
+        
         <link rel="stylesheet" type="text/css" href="output.css">
         <meta charset="UTF-8">
         <title></title>
@@ -37,7 +55,7 @@ jQueryEnPhpOpmaak($gevondenWoordenCoordinaten, $zoekwoorden); ?>
     <body>
         
         <?php
-        bestandtoevoegenaanenuit();
+        uploadonorof();
         ?>
             <form action="Output.php" method="post">
                 <input id="knoppen" type="submit" name="Niveau1" value="links naar rechts"></input>
