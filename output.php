@@ -1,13 +1,11 @@
 <?php
-include 'Functies/Splitsen.php';
-include 'Functies/BestandToevoegen.php';
-include 'Functies/MinnetjesNaarLetters.php';
-include 'Functies/Horizontaal.php';
-include 'Functies/Verticaal.php';
-include 'Functies/Diagonaal.php';
-include 'Functies/ArrayNaarTabel.php';
-include 'Functies/PrintjQueryEnPHPOpmaak.php';
-include 'Functies/PrintZoekwoorden.php';
+include 'Splitsen.php';
+include 'BestandToevoegen.php';
+include 'MinnetjesNaarLetters.php';
+include 'Horizontaal.php';
+include 'ArrayNaarTabel.php';
+include 'PrintjQueryEnPHPOpmaak.php';
+include 'PrintZoekwoorden.php';
 voegBestandToe();
 splitsen($woordenzoeker);
 minnetjesNaarLetters($woordenzoeker);

@@ -1,7 +1,7 @@
 <?php
 
 function jQueryEnPhpOpmaak($gevondenWoordenCoordinaten, $zoekwoorden) {
-    include "Functies/opmaak.php";
+    include "opmaak.php";
     klikKleuren($zoekwoorden);
     zoekwoordenOnderlijnen($zoekwoorden);
     foreach ($gevondenWoordenCoordinaten as $GEVONDENWOORDJE => $gevondenwoord) {
