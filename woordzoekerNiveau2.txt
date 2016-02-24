@@ -1,14 +1,14 @@
-erkan------a
--groot-----p
---yoni-----p
---boom-----e
--fiets-----l
+erkan-------
+-groot------
+--yoni------
+--boom------
+-fiets------
 --vliegtuig-
 stoel-------
-tafel----a--
---pmal---u--
--loohcs--t--
--teksab--o--
+tafel-------
+--pmal------
+-loohcs-----
+-teksab-----
 -teov-------
 
 erkan
@@ -23,5 +23,3 @@ lamp
 school
 basket
 voet
-appel
-auto
