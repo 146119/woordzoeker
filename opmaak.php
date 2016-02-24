@@ -4,11 +4,11 @@ function klikKleuren($zoekwoorden) {
     print "<style>";
     foreach ($zoekwoorden as $class) {
         echo "td.klik" . strtoupper($class) . "{";
-        echo "color: #F5A700;}";
+        echo "color: #AFFF00;}";
     }
     foreach ($zoekwoorden as $class) {
         echo "div.klik" . strtoupper($class) . "{";
-        echo "color: #F5A700;}";
+        echo "color: #AFFF00;}";
     }
     //foreach ($zoekwoorden as $class) {
         //echo "div." . $class . "{";

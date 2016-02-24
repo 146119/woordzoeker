@@ -15,7 +15,7 @@ function jquery($gevondenWoordenCoordinaten, $zoekwoorden) {
         echo '<script type=text/javascript>';
         echo '$(document).ready(function () {';
         echo '$("div.' . $GEVONDENWOORDJE . '").mouseleave(function () {';
-        echo '$("td.' . $GEVONDENWOORDJE . '").css("background-color", "red");';
+        echo '$("td.' . $GEVONDENWOORDJE . '").css("background-color", "");';
         echo "});";
         echo "});";
         echo '</script>';
