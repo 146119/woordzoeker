@@ -12,10 +12,10 @@ function voegBestandToe() {
         }
     }
     else {
-        $woordenzoeker = file("woordzoeker.txt");
+        $woordenzoeker = file("woordzoekerniveau123.txt");
     }
     return $woordenzoeker;
-    $woordenzoeker = file("woordzoeker.txt");
+    $woordenzoeker = file("woordzoekerniveau123.txt");
 }
 
 function uploadonorof (){
